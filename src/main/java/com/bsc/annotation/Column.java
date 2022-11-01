@@ -1,4 +1,4 @@
-package com.bsc1.annotation;
+package com.bsc.annotation;
 
 public @interface Column {
 

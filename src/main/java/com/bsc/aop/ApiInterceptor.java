@@ -1,11 +1,11 @@
-package com.bsc1.aop;
+package com.bsc.aop;
 
-import com.bsc1.annotation.Api;
-import com.bsc1.base.ApiBaseContext;
-import com.bsc1.base.MethodContext;
-import com.bsc1.config.FilterChainBuilder;
-import com.bsc1.invoker.FilterChain;
-import com.bsc1.util.MethodContextUtil;
+import com.bsc.annotation.Api;
+import com.bsc.base.ApiBaseContext;
+import com.bsc.base.MethodContext;
+import com.bsc.config.FilterChainBuilder;
+import com.bsc.invoker.FilterChain;
+import com.bsc.util.MethodContextUtil;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 
@@ -26,25 +26,7 @@ public class ApiInterceptor implements MethodInterceptor {
         apiBaseContext.setAnnotation(annotation);
         apiBaseContext.setParam(methodInvocation.getArguments());
         FilterChain filterChain = FilterChainBuilder.builder();
-        Method method = methodInvocation.getMethod();
-        Object bean = methodInvocation.getThis();
         return filterChain.invoke(apiBaseContext);
     }
 
-    public String text() {
-        return "1111";
-    }
-
-    public static void main(String[] args) throws NoSuchMethodException {
-        ApiInterceptor apiInterceptor = new ApiInterceptor();
-        Method text = ApiInterceptor.class.getMethod("text");
-        MethodContext methodContext = new MethodContext();
-        methodContext.setBean(apiInterceptor);
-        methodContext.setMethod(text);
-        MethodContextUtil.setMethodContext(methodContext);
-        FilterChain builder = FilterChainBuilder.builder();
-        ApiBaseContext apiBaseContext = new ApiBaseContext();
-        Object invoke = builder.invoke(apiBaseContext);
-        System.out.println(invoke);
-    }
 }

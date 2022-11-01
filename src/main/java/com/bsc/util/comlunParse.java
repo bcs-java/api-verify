@@ -1,4 +1,4 @@
-package com.bsc1.util;
+package com.bsc.util;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

@@ -1,7 +1,7 @@
-package com.bsc1.filter;
+package com.bsc.filter;
 
-import com.bsc1.base.ApiBaseContext;
-import com.bsc1.invoker.Invoker;
+import com.bsc.base.ApiBaseContext;
+import com.bsc.invoker.Invoker;
 
 /**
  * 抽象接口过滤器

@@ -1,10 +1,10 @@
-package com.bsc1.config;
+package com.bsc.config;
 
-import com.bsc1.base.ApiBaseContext;
-import com.bsc1.filter.ApiFilter;
-import com.bsc1.invoker.EndInvoker;
-import com.bsc1.invoker.FilterChain;
-import com.bsc1.invoker.Invoker;
+import com.bsc.base.ApiBaseContext;
+import com.bsc.filter.ApiFilter;
+import com.bsc.invoker.EndInvoker;
+import com.bsc.invoker.FilterChain;
+import com.bsc.invoker.Invoker;
 
 import java.util.ArrayList;
 import java.util.List;

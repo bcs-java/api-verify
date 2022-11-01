@@ -1,7 +1,7 @@
-package com.bsc1.invoker;
+package com.bsc.invoker;
 
-import com.bsc1.base.ApiBaseContext;
-import com.bsc1.util.MethodContextUtil;
+import com.bsc.base.ApiBaseContext;
+import com.bsc.util.MethodContextUtil;
 
 import java.lang.reflect.Method;
 

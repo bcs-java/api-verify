@@ -1,4 +1,4 @@
-package com.bsc1.annotation;
+package com.bsc.annotation;
 
 public @interface Api {
 
@@ -18,7 +18,7 @@ public @interface Api {
      * @author shenbangchen
      * @date 2022/11/01 10:48
      */
-    Column[] columnList() default {};
+   Column[] columnList() default {};
 
     /**
      * 令牌

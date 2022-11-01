@@ -1,4 +1,4 @@
-package com.bsc1.config;
+package com.bsc.config;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;

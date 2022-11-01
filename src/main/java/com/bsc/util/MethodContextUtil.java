@@ -1,6 +1,6 @@
-package com.bsc1.util;
+package com.bsc.util;
 
-import com.bsc1.base.MethodContext;
+import com.bsc.base.MethodContext;
 
 /**
  * 方法上下文跑龙套

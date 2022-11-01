@@ -1,12 +1,6 @@
-package com.bsc1.base;
+package com.bsc.base;
 
-import com.bsc1.annotation.Api;
-
-import java.io.File;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Parameter;
+import com.bsc.annotation.Api;
 
 public class ApiBaseContext {
 
